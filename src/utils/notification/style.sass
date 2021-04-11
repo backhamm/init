@@ -1,0 +1,42 @@
+// 提示框样式
+@keyframes moveIn
+  0%
+    margin-left: 350px
+
+  5%
+    margin-left: 0
+
+  95%
+    margin-left: 0
+
+  100%
+    margin-left: 350px
+
+
+
+#notification
+  position: fixed
+  z-index: 2001
+  top: 50px
+  right: 20px
+  width: 300px
+
+  .wrapper
+    width: 100%
+    margin-bottom: 20px
+    margin-left: 350px
+    padding: 20px
+    font-size: 14px
+    border: 1px solid #e3e3e3
+    border-radius: 5px
+    background: rgba(0,0,0,.8)
+    color: #eee
+    animation: moveIn
+    overflow: hidden
+
+    .main
+      width: 100%
+      word-break: break-all
+
+      .title
+        font-size: 16px
